@@ -13,12 +13,8 @@ class AccessKeyExtension extends DataObjectDecorator {
 
 
   public function updateCMSFields( FieldSet &$fields ) {
-
     $tf = new TextField('AccessKey');
     $tf->setMaxLength(1);
-
-
-
     $fields->addFieldToTab('Root.Content.Accessibility', $tf);
     $fields->renameField("AccessKey", _t('AccessKey.CMS_FIELD_INFO'));
   }
@@ -30,7 +26,7 @@ class AccessKeyExtension extends DataObjectDecorator {
 */
 }
 
-class AccessKeyControllerExtension extends Extension {
+class AccessKeysControllerExtension extends Extension {
 
   /*
   List all pages with access keys, used to render them inline on a page
