@@ -1,11 +1,13 @@
 <% cached 'accessKeys', Aggregate(Page).Max(LastEdited) %>
 <div id="accesskeys">
 <h3>Access Keys</h3>
+<ul>
+<% if PagesWithAccessKeys %>
 <% control PagesWithAccessKeys %>
-<a href="$Link" accesskey="$AccessKey">$Title</a>
+<li><a href="$Link" accesskey="$AccessKey">$Title</a></li>
 <% end_control %>
-<a href="#content" accesskey="[">Skip to Content</a> 
-<a href="#topLevelNavigation" accesskey="n">Skip to Top Level Navigation</a> 
-<a href="#sectionNavigation" accesskey="m">Skip to Section Navigation</a> 
+<% end_if %>
+<% if SiteConfig.SkipToMainContentAccessKey %><li><a href="#content" accesskey="$SiteConfig.SkipToMainContentAccessKey"><% _t('AccessKey.SKIP_TO_CONTENT', 'Next') %></a></li><% end_if %>
+</ul>
 </div>
 <% end_cached %>
