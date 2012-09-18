@@ -23,12 +23,10 @@ Add the following to your Page templates, after the body tag.
 
 Note that the following CSS will be required in your site in order to not have the access key list showing at the top of each page.  Positioning it off the screen still allows screenreaders to read the text, but it will not be visible on the visual output.
 
-@
-#accesskeys {
-	position: fixed;
-	left: -100000px;
-}
-@
+	#accesskeys {
+		position: fixed;
+		left: -100000px;
+	}
 
 ### Accessibility Page
 An Accessibility Information Page is like any other page except that after the main body, a list of access keys that have been configured is shown.
