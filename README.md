@@ -6,7 +6,14 @@
 ## Installation
     git clone git://github.com/gordonbanderson/weboftalent-access-keys.git
     cd weboftalent-access-keys
+
+Then depending if you are using SilverStripe 2.4 or 3.0,
+
     git checkout stable24
+
+or
+
+    git checkout stable30
 
 The name of the output directory does not matter
 
