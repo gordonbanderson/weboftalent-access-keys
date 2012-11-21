@@ -1,6 +1,6 @@
 <?php
   
-class AccessKeysSiteConfig extends DataObjectDecorator {
+class AccessKeysSiteConfig extends DataExtension {
      
     function extraStatics() {
         return array(
