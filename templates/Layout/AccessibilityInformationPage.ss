@@ -1,4 +1,4 @@
-<% cached 'accesskeyinfopage', Aggregate(Page).Max(LastEdited), ID, LastEdited %>
+<% cached 'accesskeyinfopage', List(Page).Max(LastEdited), ID, LastEdited %>
 <h1>$Title</h1>
 $Content
 
