@@ -1,4 +1,4 @@
-<% cached 'accessKeys', Aggregate(Page).Max(LastEdited) %>
+<% cached 'accessKeys', List(Page).Max(LastEdited) %>
 <div id="accesskeys">
 <h3>Access Keys</h3>
 <ul>
