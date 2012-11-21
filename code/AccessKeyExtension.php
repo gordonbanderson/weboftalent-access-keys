@@ -5,7 +5,7 @@
 Template override extension for the model
 1) Adds an optional access key field
 */
-class AccessKeyExtension extends DataObjectDecorator {
+class AccessKeyExtension extends DataExtension {
 
   function extraStatics() { 
     return array( 'db'=>array('AccessKey' => 'Varchar(1)' ));
@@ -15,7 +15,7 @@ class AccessKeyExtension extends DataObjectDecorator {
   public function updateCMSFields( FieldSet &$fields ) {
     $tf = new TextField('AccessKey');
     $tf->setMaxLength(1);
-    $fields->addFieldToTab('Root.Content.Accessibility', $tf);
+    $fields->addFieldToTab('Root.Accessibility', $tf);
     $fields->renameField("AccessKey", _t('AccessKey.CMS_FIELD_INFO'));
   }
 
