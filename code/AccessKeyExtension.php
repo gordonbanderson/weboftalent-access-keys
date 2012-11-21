@@ -7,23 +7,19 @@ Template override extension for the model
 */
 class AccessKeyExtension extends DataExtension {
 
-  function extraStatics() { 
-    return array( 'db'=>array('AccessKey' => 'Varchar(1)' ));
-  }
+
+  public static $db = array( 
+        'AccessKey' => 'VarChar(1)'
+  );
 
 
-  public function updateCMSFields( FieldSet &$fields ) {
+  public function updateCMSFields( FieldList $fields ) {
     $tf = new TextField('AccessKey');
     $tf->setMaxLength(1);
     $fields->addFieldToTab('Root.Accessibility', $tf);
     $fields->renameField("AccessKey", _t('AccessKey.CMS_FIELD_INFO'));
   }
 
-
-/*
-   
-
-*/
 }
 
 class AccessKeysControllerExtension extends Extension {
