@@ -1,0 +1,23 @@
+{
+	"name": "weboftalent/accesskeys",
+	"type": "silverstripe-module",
+	"description": "Access Keys Module for The SilverStripe Content Management System",
+	"homepage": "http://weboftalent.asia/blog/access-keys-module/",
+	"license": "MIT",
+	"keywords": ["silverstripe", "access keys", "keys", "accessibility"],
+	"authors": [
+		{
+			"name": "Web of Talent Co Ltd",
+			"homepage": "http://weboftalent.asia",
+			"email": "gordon@weboftalent.asia"
+		}
+	],
+
+
+	"require":
+	{
+		"silverstripe/cms": "3.*",
+		"composer/installers": "*"
+	}
+
+}
