@@ -1,23 +1,16 @@
 {
-	"name": "weboftalent/accesskeys",
+	"name": "weboftalent/weboftalent-access-keys",
+	"description": "Silverstripe module to add access keys to your site",
 	"type": "silverstripe-module",
-	"description": "Access Keys Module for The SilverStripe Content Management System",
-	"homepage": "http://weboftalent.asia/blog/access-keys-module/",
-	"license": "MIT",
-	"keywords": ["silverstripe", "access keys", "keys", "accessibility"],
+	"keywords": ["silverstripe", "facebook","weboftalent"],
 	"authors": [
-		{
-			"name": "Web of Talent Co Ltd",
-			"homepage": "http://weboftalent.asia",
-			"email": "gordon@weboftalent.asia"
-		}
+	{
+		"name": "Gordon Anderson",
+		"email": "gordon@weboftalent.asia"
+	}
 	],
-
-
 	"require":
 	{
-		"silverstripe/cms": "3.*",
-		"composer/installers": "*"
+		"silverstripe/framework": "3.*"
 	}
-
 }
